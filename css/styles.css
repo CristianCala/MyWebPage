@@ -114,6 +114,15 @@ section{
   height: 15vh;
 }
 
+.svg-contacto{
+  top: 0;
+  height: 15vh;
+}
+
+footer{
+  position: relative;
+}
+
 .tamaño-container{
   padding-bottom: 10rem;
 }
@@ -135,13 +144,4 @@ section{
 .progress-bar{
   background-color: var(--main-secondary-color) !important;
 
-}
-
-footer{
-  position: relative;
-}
-
-.svg-footer{
-  /*bottom: 0;*/
-  /*height: 2vh;*/
 }
