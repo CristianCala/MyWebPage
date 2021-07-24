@@ -16,11 +16,20 @@
 
 body{
 	font-family: 'Signika' !important;
-	background-color: var(--main-bg-color);
+	background-color: #212529;
+}
+
+.card{
+  border: none !important;
+  border-radius: .75rem;
 }
 
 .m-bg-primary{
 	background-color: var(--main-primary-color) !important;
+}
+
+.m-bg-color{
+  background-color: var(--main-bg-color) !important;
 }
 
 .m-text-secondary{
@@ -78,4 +87,61 @@ body{
 .nav-link:hover:after{
     right: 0;
     left: 0;
+}
+
+.z-index{
+  z-index: 10;
+}
+
+.header{
+  position: relative;
+}
+.section-svg-header {
+  bottom: -10%;
+  height: 15vh;
+}
+
+section{
+  position: relative;
+}
+.svg-proyectos{
+  top: 0;
+  height: 15vh;
+}
+
+.svg-proyectos-abajo{
+  bottom: 0;
+  height: 15vh;
+}
+
+.tamaño-container{
+  padding-bottom: 10rem;
+}
+
+.progress{
+  height: 8px;
+}
+
+.relative{
+  position: relative;
+}
+
+.porcentaje{
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+.progress-bar{
+  background-color: var(--main-secondary-color) !important;
+
+}
+
+footer{
+  position: relative;
+}
+
+.svg-footer{
+  /*bottom: 0;*/
+  /*height: 2vh;*/
 }
