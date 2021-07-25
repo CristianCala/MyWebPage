@@ -143,5 +143,8 @@ footer{
 
 .progress-bar{
   background-color: var(--main-secondary-color) !important;
+}
 
+.circle{
+  clip-path: circle(28.0% at 50% 50%);
 }
