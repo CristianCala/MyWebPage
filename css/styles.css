@@ -96,26 +96,26 @@ body{
 .header{
   position: relative;
 }
-.section-svg-header {
-  bottom: -10%;
-  height: 15vh;
+.svg-header {
+  bottom: -4.5rem;
+  height: 20vh;
 }
 
 section{
   position: relative;
 }
 .svg-proyectos{
-  top: 0;
+  top: -.5rem;
   height: 15vh;
 }
 
 .svg-proyectos-abajo{
-  bottom: 0;
+  bottom: -.5rem;
   height: 15vh;
 }
 
 .svg-contacto{
-  top: 0;
+  top: -.5rem;
   height: 15vh;
 }
 
