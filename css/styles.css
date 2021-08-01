@@ -89,6 +89,20 @@ body{
     left: 0;
 }
 
+nav{
+  position: relative;
+}
+
+nav:after{
+  position: absolute;
+  content: '';
+  background-color: var(--main-primary-color);
+  width: 100%;
+  height: 8px;
+  bottom: -.5rem;
+
+}
+
 .z-index{
   z-index: 10;
 }
@@ -147,4 +161,12 @@ footer{
 
 .circle{
   clip-path: circle(28.0% at 50% 50%);
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.circle img{
+  width: 35%;
+  height: auto;
 }
