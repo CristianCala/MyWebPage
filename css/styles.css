@@ -159,6 +159,11 @@ footer{
   background-color: var(--main-secondary-color) !important;
 }
 
+.proyectos img{
+  border-radius: 16px;
+}
+
+
 .circle{
   clip-path: circle(28.0% at 50% 50%);
   width: 90%;
