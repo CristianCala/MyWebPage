@@ -155,32 +155,9 @@ footer{
   right: 0;
 }
 
-.percent:before{
-  content: attr(per);
-  position: absolute;
-  padding: 4px 6px;
-  background-color: white;
-  border-radius: 4px;
-  font-size: 12px;
-  top: -35px;
-  right: 0;
-  transform: translateX(50%);
-}
-
-.percent:after{
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  top: -20px;
-  right: 0;
-  transform: translateX(50%) rotate(45deg);
-  border-radius: 2px;
-}
-
-.percent{
+.progress-bar{
   animation: llenarBarra 2.5s 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes llenarBarra{
