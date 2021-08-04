@@ -19,6 +19,15 @@ body{
 	background-color: #212529;
 }
 
+li{
+  list-style: none !important;
+}
+
+::selection{
+  background-color: var(--main-secondary-color);
+  color: white;
+}
+
 .card{
   border: none !important;
   border-radius: .75rem;
@@ -48,6 +57,20 @@ body{
 	background-color: transparent;
 	color: var(--main-secondary-color);
 	border: 2px solid var(--main-secondary-color);
+}
+
+/*social button*/
+.social-btn{
+  border: 1px solid white;
+  padding: .5rem;
+  border-radius: 8px;
+}
+
+.social-btn:hover{
+  /*background-color: var(--main-secondary-color);*/
+  background-color: white;
+  color:  var(--main-secondary-color) !important;
+  border: 2px solid var(--main-secondary-color) !important;
 }
 
 .brand-decorate{
@@ -188,4 +211,11 @@ footer{
 .circle img{
   width: 35%;
   height: auto;
+}
+
+.btn-up{
+  position: absolute;
+  right: 45%;
+  left: 45%;
+  top: -2.5rem;
 }
