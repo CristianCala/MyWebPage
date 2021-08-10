@@ -20,6 +20,9 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<!-- Fontawesome -->
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+		<!-- MDB -->
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"/> -->
 		
 		<link rel="stylesheet" href="css/styles.css">
 		<title>Cristian Cala</title>
@@ -206,8 +209,18 @@
 				<div class="container tamaño-container">
 					<div class="row">
 						<div class="col-12 col-sm-4 col-lg-4">
-							<div class="card proyectos mt-2">
+							<div class="card proyectos mt-2 hover hover-3">
 								<img src="img/VillaBurger.png" alt="VillaBurger" loading="lazy">
+								<div class="hover-overlay"></div>
+								<div class="hover-contenido">
+									<h5 class="text-white mt-5">Villaburger</h5>
+									<div class="hover-descripcion">
+										<p class="text-white">Plantilla para bar y restaurant</p>
+										<button type="button" class="btn m-btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+										Launch demo modal
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-4 col-lg-4">
@@ -364,8 +377,87 @@
 				<p class="text-dark fs-5">Creado con <i class="fas fa-heart text-danger"></i> por <strong class="m-text-secondary	">Cristian Cala @2021</strong></p>
 			</div>
 		</footer>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content relative">
+					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div>
+						<!-- Carousel wrapper -->
+						<div
+						  id="carouselBasicExample"
+						  class="carousel slide carousel-fade"
+						  data-mdb-ride="carousel"
+						>
+						  <!-- Inner -->
+						  <div class="carousel-inner">
+						    <!-- Single item -->
+						    <div class="carousel-item active">
+						      <img
+						        src="img/VillaBurger.png"
+						        class="d-block w-100"
+						        alt="Villaburger web"
+						      />
+						    </div>
+
+						    <!-- Single item -->
+						    <div class="carousel-item">
+						      <img
+						        src="img/VillaBurger2.png"
+						        class="d-block w-100"
+						        alt="..."
+						      />
+						    </div>
+
+						    <!-- Single item -->
+						    <div class="carousel-item">
+						      <img
+						        src="img/VillaBurger3.png"
+						        class="d-block w-100"
+						        alt="..."
+						      />
+						    </div>
+						  </div>
+
+						  <!-- Controles -->
+						  <button
+						    class="carousel-control-prev"
+						    type="button"
+						    data-mdb-target="#carouselBasicExample"
+						    data-mdb-slide="prev"
+						  >
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+						  </button>
+						  <button
+						    class="carousel-control-next"
+						    type="button"
+						    data-mdb-target="#carouselBasicExample"
+						    data-mdb-slide="next"
+						  >
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						  </button>
+						</div>
+					</div>
+					<div class="modal-body p-4">
+						<h5 class="fs-3 fw-bold">Web Villaburger</h5>
+						<h4 class="fs-4 text-muted mb-4">Plantilla</h4>
+						<p>Plantilla diseñada con HTML5, CSS3, Javascript, Ilustrator y Photoshop. Diseñada específicamente para venta de comida rápida.</p>
+					</div>
+					<div class="container pb-3 ps-4">
+						<a href="#" class="btn m-btn-primary-reverse px-5 fw-bold">Ver Sitio</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Bootstrap Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<!-- MDB -->
+		<script
+		  type="text/javascript"
+		  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+		></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
