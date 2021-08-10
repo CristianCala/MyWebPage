@@ -16,7 +16,8 @@
 
 body{
 	font-family: 'Signika' !important;
-	background-color: #212529;
+	/*background-color: #212529;*/
+  background-color: var(--main-bg-color);
 }
 
 li{
@@ -67,7 +68,6 @@ li{
 }
 
 .social-btn:hover{
-  /*background-color: var(--main-secondary-color);*/
   background-color: white;
   color:  var(--main-secondary-color) !important;
   border: 2px solid var(--main-secondary-color) !important;
@@ -156,10 +156,6 @@ section{
   height: 15vh;
 }
 
-footer{
-  position: relative;
-}
-
 .tamaño-container{
   padding-bottom: 10rem;
 }
@@ -217,5 +213,5 @@ footer{
   position: absolute;
   right: 45%;
   left: 45%;
-  top: -2.5rem;
+  top: -1.5rem;
 }
