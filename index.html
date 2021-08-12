@@ -224,8 +224,18 @@
 							</div>
 						</div>
 						<div class="col-12 col-sm-4 col-lg-4">
-							<div class="card proyectos mt-2">
+							<div class="card proyectos mt-2 hover hover-3">
 								<img src="img/RecoveryLoid.png" alt="RecoveryLoid" loading="lazy">
+								<div class="hover-overlay"></div>
+								<div class="hover-contenido">
+									<div class="hover-descripcion">
+										<h5 class="text-white mt-5">RecoveryLoid</h5>
+										<p class="text-white">Pequeña empresa RecoveryLoid</p>
+										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#ModalRecovery">
+										Visualizar
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-4 col-lg-4">
@@ -385,59 +395,133 @@
 					<div>
 						<!-- Carousel wrapper -->
 						<div
-						  id="carouselBasicExample"
-						  class="carousel slide carousel-fade"
-						  data-mdb-ride="carousel"
+							id="carouselBasicExample"
+							class="carousel slide carousel-fade"
+							data-mdb-ride="carousel"
 						>
-						  <!-- Inner -->
-						  <div class="carousel-inner">
-						    <!-- Single item -->
-						    <div class="carousel-item active">
-						      <img
-						        src="img/VillaBurgerM.png"
-						        class="d-block w-100"
-						        alt="Villaburger web"
-						      />
-						    </div>
+							<!-- Inner -->
+							<div class="carousel-inner">
+								<!-- Single item -->
+								<div class="carousel-item active">
+									<img
+										src="img/VillaBurgerM.png"
+										class="d-block w-100"
+										alt="Villaburger web"
+									/>
+								</div>
 
-						    <!-- Single item -->
-						    <div class="carousel-item">
-						      <img
-						        src="img/VillaBurger2.png"
-						        class="d-block w-100"
-						        alt="..."
-						      />
-						    </div>
+								<!-- Single item -->
+								<div class="carousel-item">
+									<img
+										src="img/VillaBurger2.png"
+										class="d-block w-100"
+										alt="..."
+									/>
+								</div>
 
-						    <!-- Single item -->
-						    <div class="carousel-item">
-						      <img
-						        src="img/VillaBurger3.png"
-						        class="d-block w-100"
-						        alt="..."
-						      />
-						    </div>
-						  </div>
+								<!-- Single item -->
+								<div class="carousel-item">
+									<img
+										src="img/VillaBurger3.png"
+										class="d-block w-100"
+										alt="..."
+									/>
+								</div>
+							</div>
 
-						  <!-- Controles -->
-						  <button
-						    class="carousel-control-prev"
-						    type="button"
-						    data-mdb-target="#carouselBasicExample"
-						    data-mdb-slide="prev"
-						  >
-						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						    <span class="visually-hidden">Previous</span>
-						  </button>
-						  <button
-						    class="carousel-control-next"
-						    type="button"
-						    data-mdb-target="#carouselBasicExample"
-						    data-mdb-slide="next"
-						  >
-						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						    <span class="visually-hidden">Next</span>
-						  </button>
+							<!-- Controles -->
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-mdb-target="#carouselBasicExample"
+								data-mdb-slide="prev"
+							>
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-mdb-target="#carouselBasicExample"
+								data-mdb-slide="next"
+							>
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+					<div class="modal-body p-4">
+						<h5 class="fs-3 fw-bold">Web Villaburger</h5>
+						<h4 class="fs-4 text-muted mb-4">Plantilla</h4>
+						<p>Plantilla diseñada con HTML5, CSS3, Javascript, Ilustrator y Photoshop. Diseñada específicamente para venta de comida rápida.</p>
+					</div>
+					<div class="container pb-3 ps-4">
+						<a href="https://plantillademoburger.netlify.app/"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold">Ver Sitio</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ModalRecovery -->
+		<div class="modal fade" id="ModalRecovery" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content relative">
+					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div>
+						<!-- Carousel wrapper -->
+						<div
+							id="carouselButtonRecovery"
+							class="carousel slide carousel-fade"
+							data-mdb-ride="carousel"
+						>
+							<!-- Inner -->
+							<div class="carousel-inner">
+								<!-- Single item -->
+								<div class="carousel-item active">
+									<img
+										src="img/Recovery.png"
+										class="d-block w-100"
+										alt="Villaburger web"
+									/>
+								</div>
+
+								<!-- Single item -->
+								<div class="carousel-item">
+									<img
+										src="img/Recovery2.png"
+										class="d-block w-100"
+										alt="..."
+									/>
+								</div>
+
+								<!-- Single item -->
+								<div class="carousel-item">
+									<img
+										src="img/Recovery3.png"
+										class="d-block w-100"
+										alt="..."
+									/>
+								</div>
+							</div>
+
+							<!-- Controles -->
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-mdb-target="#carouselButtonRecovery"
+								data-mdb-slide="prev"
+							>
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-mdb-target="#carouselButtonRecovery"
+								data-mdb-slide="next"
+							>
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
 						</div>
 					</div>
 					<div class="modal-body p-4">
