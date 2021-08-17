@@ -256,7 +256,7 @@
 						<!-- Segunda fila de proyectos -->
 						<div class="col-12 col-sm-4 col-lg-4">
 							<div class="card proyectos mt-2 hover hover-3">
-								<img src="img/RegisterVive.png" alt="Register Vive">
+								<img src="img/RegisterVive.png" alt="Register Vive" loading="lazy">
 								<div class="hover-overlay"></div>
 								<div class="hover-contenido">
 									<div class="hover-descripcion">
@@ -270,13 +270,33 @@
 							</div>
 						</div>
 						<div class="col-12 col-sm-4 col-lg-4">
-							<div class="card proyectos mt-5 p-5">
-								<img src="a" alt="">
+							<div class="card proyectos mt-2 hover hover-3">
+								<img src="img/Vesor3.png" alt="Vesor" loading="lazy">
+								<div class="hover-overlay"></div>
+								<div class="hover-contenido">
+									<div class="hover-descripcion">
+										<h5 class="text-white mt-5 fw-bold">Proyecto Vesor</h5>
+										<p class="text-white">Administrador de comunidades</p>
+										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#modalVesor">
+										Visualizar
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-4 col-lg-4">
-							<div class="card proyectos mt-5 p-5">
-								<img src="a" alt="">
+							<div class="card proyectos mt-2 hover hover-3">
+								<img src="img/Rode1.png" alt="Rode" loading="lazy">
+								<div class="hover-overlay"></div>
+								<div class="hover-contenido">
+									<div class="hover-descripcion">
+										<h5 class="text-white mt-5 fw-bold">Rode</h5>
+										<p class="text-white">Administrador de pagos y deudas</p>
+										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#modalRode">
+										Visualizar
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -647,29 +667,17 @@
 							<div class="carousel-inner">
 								<!-- Single item -->
 								<div class="carousel-item active">
-									<img
-										src="img/Recovery.png"
-										class="d-block w-100"
-										alt="Villaburger web"
-									/>
+									<img src="img/LoginVive.png" class="d-block w-100" alt="Login viveTv" loading="lazy"/>
 								</div>
 
 								<!-- Single item -->
 								<div class="carousel-item">
-									<img
-										src="img/Recovery2.png"
-										class="d-block w-100"
-										alt="..."
-									/>
+									<img src="img/RegisterVive.png" class="d-block w-100" alt="Register ViveTv" loading="lazy">
 								</div>
 
 								<!-- Single item -->
 								<div class="carousel-item">
-									<img
-										src="img/Recovery3.png"
-										class="d-block w-100"
-										alt="..."
-									/>
+									<img src="img/DashboardVive.png" class="d-block w-100" alt="Dashboard Vive Tv" loading="lazy">
 								</div>
 							</div>
 
@@ -705,6 +713,133 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- ModalVesor -->
+		<div class="modal fade" id="modalVesor" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content relative">
+					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div>
+						<!-- Carousel wrapper -->
+						<div
+							id="carouselButtonVesor"
+							class="carousel slide carousel-fade"
+							data-mdb-ride="carousel"
+						>
+							<!-- Inner -->
+							<div class="carousel-inner">
+								<!-- Single item -->
+								<div class="carousel-item active">
+									<img src="img/Vesor3.png" class="d-block w-100" alt="Vesor Aplicación" loading="lazy"/>
+								</div>
+
+								<!-- Single item -->
+								<div class="carousel-item">
+									<img src="img/Vesor2.png" class="d-block w-100" alt="Vesor Login" loading="lazy">
+								</div>
+
+								<!-- Single item -->
+								<div class="carousel-item">
+									<img src="img/Vesor.png" class="d-block w-100" alt="Registro Vesor" loading="lazy">
+								</div>
+							</div>
+
+							<!-- Controles -->
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-mdb-target="#carouselButtonVesor"
+								data-mdb-slide="prev"
+							>
+								<span class="fas fa-caret-left fa-3x m-text-secondary" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-mdb-target="#carouselButtonVesor"
+								data-mdb-slide="next"
+							>
+								<span class="fas fa-caret-right fa-3x m-text-secondary" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+					<div class="modal-body p-4">
+						<h5 class="fs-3 fw-bold">Proyecto Vesor</h5>
+						<h4 class="fs-4 text-muted mb-4">Aplicación de escritorio</h4>
+						<p>Aplicación de escritorio para llevar la administración y estadísticas de las comunidades. Creado con Python PyQt5 y Sqlite3.</p>
+					</div>
+					<div class="container pb-3 ps-4">
+						<a href="https://github.com/JoseSierraVzl/Proyecto-VESOR"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold">Ver repositorio</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ModalRODE -->
+		<div class="modal fade" id="modalRode" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content relative">
+					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div>
+						<!-- Carousel wrapper -->
+						<div
+							id="carouselButtonRode"
+							class="carousel slide carousel-fade"
+							data-mdb-ride="carousel"
+						>
+							<!-- Inner -->
+							<div class="carousel-inner">
+								<!-- Single item -->
+								<div class="carousel-item active">
+									<img src="img/Rode1.png" class="d-block w-100" alt="Rode Aplicación" loading="lazy"/>
+								</div>
+
+								<!-- Single item -->
+								<div class="carousel-item">
+									<img src="img/Rode2.png" class="d-block w-100" alt="Rode Dashboard" loading="lazy">
+								</div>
+
+								<!-- Single item -->
+								<div class="carousel-item">
+									<img src="img/Rode3.png" class="d-block w-100" alt="Rode Uso" loading="lazy">
+								</div>
+							</div>
+
+							<!-- Controles -->
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-mdb-target="#carouselButtonRode"
+								data-mdb-slide="prev"
+							>
+								<span class="fas fa-caret-left fa-3x m-text-secondary" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-mdb-target="#carouselButtonRode"
+								data-mdb-slide="next"
+							>
+								<span class="fas fa-caret-right fa-3x m-text-secondary" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+					<div class="modal-body p-4">
+						<h5 class="fs-3 fw-bold">RODE</h5>
+						<h4 class="fs-4 text-muted mb-4">Aplicación de escritorio</h4>
+						<p>Aplicación de escritorio para llevar la administración y estadísticas deudas y cobros por y para hacer. Creada con NodeJs y ElectronJs.</p>
+					</div>
+					<div class="container pb-3 ps-4">
+						<a href="https://github.com/JoseSierraVzl/RODE2.0"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold">Ver repositorio</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Bootstrap Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<!-- MDB -->
