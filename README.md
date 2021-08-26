@@ -1,2 +1,2 @@
 # MyWebPage
-Mi página web
+Página web personal o portafolio personal

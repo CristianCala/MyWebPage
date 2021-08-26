@@ -16,7 +16,6 @@
 
 body{
 	font-family: 'Signika' !important;
-	/*background-color: #212529;*/
   background-color: var(--main-bg-color);
 }
 
@@ -323,7 +322,24 @@ section{
 
 .particles-box {
   position: absolute;
-  top: 40%;
-  right: 25%;
-  left: 25%;
+  top: 25%;
+  /*right: 25%;*/
+  left: 0;
+}
+
+.font-large{
+  font-size: 6vw !important;
+}
+
+.font-small{
+  font-size: 3vw !important;
+}
+
+.fondo-contacto{
+  width: 100%;
+  background: url(../img/FondoContacto.svg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
