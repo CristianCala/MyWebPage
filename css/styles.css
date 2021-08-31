@@ -327,6 +327,11 @@ section{
   left: 0;
 }
 
+.interlineado{
+  line-height: 1em;
+  letter-spacing: 5px;
+}
+
 .font-large{
   font-size: 6vw !important;
 }
