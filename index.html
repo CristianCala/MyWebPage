@@ -22,6 +22,8 @@
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<!-- MDB -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"/>
+		<!-- SweetAlertjs -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<title>Cristian Cala</title>
 	</head>
@@ -373,20 +375,20 @@
 						<div class="col-12 col-sm-6">
 							<div class="fondo-contacto card p-4 mb-5">
 								<h3 class="ms-3 text-white mb-3">Déjame un mensaje</h3>
-								<form class="container-fluid">
+								<form class="container-fluid" id="formulario">
 									<div class="row">
 										<div class="col-6 container-fluid">
-											<input class="form-control" type="text" placeholder="Tu nombre..." required>
+											<input class="form-control" type="text" placeholder="Tu nombre..." id="nombre" required>
 										</div>
 										<div class="col-6 container-fluid">
-											<input class="form-control" type="email" placeholder="Email..." required>
+											<input class="form-control" type="email" placeholder="Email..." id="email" required>
 										</div>
 										<div class="container">
-											<input class="form-control my-3" type="text" placeholder="Asunto..." required>
-											<textarea name="mensaje" placeholder="Mensaje..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+											<input class="form-control my-3" type="text" placeholder="Asunto..." id="asunto" required>
+											<textarea name="mensaje" placeholder="Mensaje..." class="form-control" id="mensaje" rows="3"></textarea>
 										</div>
 									</div>
-									<input type="submit" class="btn m-btn-primary mt-3 px-5">
+									<input type="button" class="btn m-btn-primary mt-3 px-5" value="Enviar" onClick="{sendEmail()}">
 								</form>
 							</div>
 						</div>
@@ -827,6 +829,9 @@
 		<!-- Particles Js -->
 		<script src="js/particlescdn.js"></script>
 		<script src="js/particles.js"></script>
-
+		<!-- SweetAlertJs -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+        <!-- Emailjs -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 	</body>
 </html>
