@@ -348,3 +348,30 @@ section{
   position: relative;
   overflow: hidden;
 }
+
+.opacity_down{
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.transform_up{
+  transform: translateY(20%);
+}
+
+.transform_down{
+  transform: translateY(-20%);
+}
+
+.transform_left{
+  transform: translateX(20%);
+}
+
+.transform_right{
+  transform: translateX(-20%);
+}
+
+
+.aparecer{
+  opacity: 1;
+  transform: none;
+}

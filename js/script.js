@@ -1,3 +1,40 @@
+// Efecto Fade_up
+window.addEventListener('scroll', function(){
+
+  function fade(direction){
+
+    var seccion = document.querySelectorAll('.fade_' + direction);
+
+    for (var i = 0; i < seccion.length; i++){
+
+      var altura = window.innerHeight/1.3;
+      var distancia = seccion[i].getBoundingClientRect().top;
+
+      console.log(altura)
+      console.log(distancia)
+
+        seccion[i].classList.add('transform_' + direction)
+
+      if(distancia <= altura){
+
+          seccion[i].classList.add('aparecer');
+      }
+      else{
+
+        seccion[i].classList.remove('aparecer');
+
+      }
+
+    }
+  }
+
+  fade('left')
+  fade('up')
+  fade('down')
+  fade('right')
+
+})
+
 function sendEmail(){
 
   (function() {
@@ -45,11 +82,4 @@ function sendEmail(){
         });
     }
 
-} 
-
-
-// function test(){
-//   var nombre = document.querySelector('#nombre').value;
-
-
-// }
+}
