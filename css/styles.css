@@ -350,8 +350,8 @@ section{
 }
 
 .opacity_down{
-  opacity: 0.5;
-  transition: all 0.5s;
+  opacity: 0.1;
+  transition: all 1s;
 }
 
 .transform_up{
@@ -369,7 +369,6 @@ section{
 .transform_right{
   transform: translateX(-20%);
 }
-
 
 .aparecer{
   opacity: 1;

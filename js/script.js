@@ -4,7 +4,6 @@ window.addEventListener('scroll', function(){
   function fade(direction){
 
     var seccion = document.querySelectorAll('.fade_' + direction);
-
     for (var i = 0; i < seccion.length; i++){
 
       var altura = window.innerHeight/1.3;
@@ -28,10 +27,10 @@ window.addEventListener('scroll', function(){
     }
   }
 
-  fade('left')
-  fade('up')
-  fade('down')
-  fade('right')
+  fade('left');
+  fade('up');
+  fade('down');
+  fade('right');
 
 })
 
