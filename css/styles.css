@@ -299,10 +299,17 @@ section{
 }
 
 .btn-up{
+  background-color: var(--main-secondary-color);
+  color:  white;
   position: absolute;
-  right: 45%;
-  left: 45%;
+  right: 40%;
+  left: 40%;
   top: -1.5rem;
+}
+
+.btn-up:hover{
+  opacity: .9;
+  color:  white;
 }
 
 .cerrar-modal{
