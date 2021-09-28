@@ -335,7 +335,7 @@ section{
 }
 
 .interlineado{
-  line-height: 1em;
+  line-height: 1.5em;
   letter-spacing: 5px;
 }
 
@@ -380,4 +380,12 @@ section{
 .aparecer{
   opacity: 1;
   transform: none;
+}
+
+@media screen and (min-width: 992px){
+
+.interlineado{
+  line-height: 1em;
+}
+
 }
