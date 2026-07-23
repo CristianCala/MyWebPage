@@ -1,0 +1,207 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+
+  --color-cream: #f4f1ea;
+  --color-cream-soft: #fbfaf6;
+  --color-dark: #211915;
+  --color-dark-soft: #2a201b;
+  --color-red: #ef3246;
+  --color-red-deep: #b5202f;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    background: var(--color-cream);
+    color: var(--color-dark);
+  }
+}
+
+@layer components {
+  /* ---------- skew "racing" label pattern ---------- */
+  .skew {
+    display: inline-block;
+    transform: skewX(-8deg);
+  }
+  .skew > * {
+    display: inline-block;
+    transform: skewX(8deg);
+  }
+
+  /* ---------- repeating diagonal speed-line texture ---------- */
+  .speed-lines-light {
+    background-image: repeating-linear-gradient(
+      115deg,
+      transparent 0,
+      transparent 38px,
+      rgba(33, 25, 21, 0.018) 38px,
+      rgba(33, 25, 21, 0.018) 39px
+    );
+  }
+  .speed-lines-dark {
+    background-image: repeating-linear-gradient(
+      115deg,
+      transparent 0,
+      transparent 44px,
+      rgba(244, 241, 234, 0.022) 44px,
+      rgba(244, 241, 234, 0.022) 45px
+    );
+  }
+
+  /* ---------- hexagon clip-paths (each tied to a fixed px size) ---------- */
+  .hex-logo {
+    width: 30px;
+    height: 34px;
+    clip-path: path(
+      'M 11.95 1.73 Q 15 0 18.05 1.73 L 26.95 6.77 Q 30 8.5 30 12 L 30 22 Q 30 25.5 26.95 27.23 L 18.05 32.27 Q 15 34 11.95 32.27 L 3.05 27.23 Q 0 25.5 0 22 L 0 12 Q 0 8.5 3.05 6.77 Z'
+    );
+  }
+  .hex-frame-outer {
+    width: 317px;
+    height: 350px;
+    clip-path: path(
+      'M 146.68 6.52 Q 158.5 0 170.32 6.52 L 305.18 80.98 Q 317 87.5 317 101 L 317 249 Q 317 262.5 305.18 269.02 L 170.32 343.48 Q 158.5 350 146.68 343.48 L 11.82 269.02 Q 0 262.5 0 249 L 0 101 Q 0 87.5 11.82 80.98 Z'
+    );
+  }
+  .hex-frame-inner {
+    width: 306px;
+    height: 337px;
+    clip-path: path(
+      'M 142.05 6.03 Q 153 0 163.95 6.03 L 295.05 78.22 Q 306 84.25 306 96.75 L 306 240.25 Q 306 252.75 295.05 258.78 L 163.95 330.97 Q 153 337 142.05 330.97 L 10.95 258.78 Q 0 252.75 0 240.25 L 0 96.75 Q 0 84.25 10.95 78.22 Z'
+    );
+  }
+  .hex-photo {
+    width: 290px;
+    height: 320px;
+    clip-path: path(
+      'M 134.06 6.04 Q 145 0 155.94 6.04 L 279.06 73.96 Q 290 80 290 92.5 L 290 227.5 Q 290 240 279.06 246.04 L 155.94 313.96 Q 145 320 134.06 313.96 L 10.94 246.04 Q 0 240 0 227.5 L 0 92.5 Q 0 80 10.94 73.96 Z'
+    );
+  }
+  .hex-chip {
+    width: 62px;
+    height: 70px;
+    clip-path: path(
+      'M 24.9 3.44 Q 31 0 37.1 3.44 L 55.9 14.06 Q 62 17.5 62 24.5 L 62 45.5 Q 62 52.5 55.9 55.94 L 37.1 66.56 Q 31 70 24.9 66.56 L 6.1 55.94 Q 0 52.5 0 45.5 L 0 24.5 Q 0 17.5 6.1 14.06 Z'
+    );
+  }
+  .hex-chip-ring {
+    width: 68px;
+    height: 76px;
+    clip-path: path(
+      'M 27.37 3.71 Q 34 0 40.63 3.71 L 61.37 15.29 Q 68 19 68 26.6 L 68 49.4 Q 68 57 61.37 60.71 L 40.63 72.29 Q 34 76 27.37 72.29 L 6.63 60.71 Q 0 57 0 49.4 L 0 26.6 Q 0 19 6.63 15.29 Z'
+    );
+  }
+  .hex-success {
+    width: 70px;
+    height: 77px;
+    clip-path: path(
+      'M 28.1 3.88 Q 35 0 41.9 3.88 L 63.1 15.88 Q 70 19.75 70 27.65 L 70 51.35 Q 70 59.25 63.1 63.12 L 41.9 75.12 Q 35 79 28.1 75.12 L 6.9 63.12 Q 0 59.25 0 51.35 L 0 27.65 Q 0 19.75 6.9 15.88 Z'
+    );
+  }
+
+  /* ---------- hero diagonal slab ---------- */
+  /* the last 160px of height is flush/vertical (no diagonal), in fixed px
+     (not %) so it stays shorter than BikeDivider's raise on any viewport
+     height, letting BikeDivider's straight top edge overlap it cleanly */
+  .hero-slab {
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 160px));
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinr {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes ride {
+  0% {
+    left: -240px;
+  }
+  100% {
+    left: calc(100% + 240px);
+  }
+}
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1.2deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(1.2deg);
+  }
+}
+@keyframes roadmove {
+  to {
+    background-position: -240px 0;
+  }
+}
+@keyframes streak {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scaleX(0.7);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scaleX(1);
+  }
+}
+@keyframes wspin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scrollX {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 40s linear infinite;
+}
+.animate-spin-reverse {
+  animation: spinr 60s linear infinite;
+}
+.animate-ride {
+  animation: ride 6.5s linear infinite;
+}
+.animate-bob {
+  animation: bob 0.7s ease-in-out infinite;
+}
+.animate-roadmove {
+  animation: roadmove 0.45s linear infinite;
+}
+.animate-streak {
+  animation: streak 0.4s ease-in-out infinite;
+}
+.animate-scrollx-slow {
+  animation: scrollX 26s linear infinite;
+}
+.animate-scrollx-fast {
+  animation: scrollX 15s linear infinite;
+}
+
+/* bike SVG wheels (classes live inside the fetched bike.svg markup) */
+.wlL,
+.wlR {
+  transform-box: view-box;
+  animation: wspin 0.9s linear infinite;
+}
+.wlL {
+  transform-origin: 597.4px 1173.4px;
+}
+.wlR {
+  transform-origin: 2579.2px 1173.4px;
+}

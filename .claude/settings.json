@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --version)",
+      "Bash(npx --yes prettier@3 --write \"src/**/*.{vue,js}\")",
+      "Bash(command -v chromium chromium-browser google-chrome)",
+      "Bash(npm ls *)",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --window-size=1440,2400 --screenshot=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/full.png \"http://localhost:5183/\")",
+      "Bash(convert /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/full.png -crop 1440x400+0+2150 /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/seam.png)",
+      "Bash(curl -s \"http://localhost:5183/src/components/BikeDivider.vue\")",
+      "Bash(curl -s \"http://localhost:5183/src/assets/main.css\")",
+      "Bash(google-chrome --headless=new --disable-gpu --no-sandbox --virtual-time-budget=3000 --dump-dom \"http://localhost:5183/\")",
+      "Bash(command -v wscat websocat node)",
+      "Bash(node -e \"require\\('ws'\\)\")",
+      "Bash(python3 -c \"import websocket\")",
+      "Bash(pip3 list *)",
+      "Bash(pkill -f \"remote-debugging-port=9222\")",
+      "Bash(nohup google-chrome --headless=new --disable-gpu --no-sandbox --remote-debugging-port=9222 --window-size=1440,1200 \"http://localhost:5183/\")",
+      "Bash(curl -s http://localhost:9222/json)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d[0]['webSocketDebuggerUrl']\\)\")",
+      "Bash(python3 -)",
+      "Bash(pkill -f user-data-dir=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/chrome-debug-profile)",
+      "Bash(nohup google-chrome --headless=new --disable-gpu --no-sandbox --user-data-dir=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/chrome-debug-profile --remote-debugging-port=9333 --window-size=1440,1200 http://localhost:5183/)",
+      "Bash(disown)",
+      "Bash(curl -s http://localhost:9333/json/version)",
+      "Bash(curl -s http://localhost:9333/json)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\([t.get\\('webSocketDebuggerUrl'\\) for t in d if t.get\\('type'\\)=='page']\\)\")",
+      "Bash(pkill -f \"chrome-debug-profile\")",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --user-data-dir=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/chrome-profile2 --window-size=1440,2400 --screenshot=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v2.png http://localhost:5183/)",
+      "Bash(convert /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v2.png -crop 1440x450+0+2050 /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v2-seam.png)",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --user-data-dir=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/chrome-profile3 --window-size=1440,2400 --screenshot=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v3.png http://localhost:5183/)",
+      "Bash(convert /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v3.png -crop 500x150+950+2050 -resize 1000x300 /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v3-zoom.png)",
+      "Bash(convert /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v3.png -crop 1440x200+0+2000 -resize 1440x400 /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v3-zoom2.png)",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --user-data-dir=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/chrome-profile4 --window-size=1440,2400 --screenshot=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v4.png http://localhost:5183/)",
+      "Bash(convert /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v4.png -crop 1440x450+0+2050 /tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v4-full.png)",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --user-data-dir=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/chrome-profile5 --window-size=1440,3000 --screenshot=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v4b.png http://localhost:5183/)",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --user-data-dir=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/chrome-profile6 --window-size=1440,3500 --screenshot=/tmp/claude-1000/-home-rockman-Escritorio-code-MyWebPage/d4858d5c-aea7-4a88-bf4c-a00cb2b0eeaf/scratchpad/v4c.png http://localhost:5183/)"
+    ]
+  }
+}

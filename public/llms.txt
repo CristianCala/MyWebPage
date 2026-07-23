@@ -1,0 +1,33 @@
+# Cristian Cala
+
+> Desarrollador Fullstack con 5+ años de experiencia construyendo plataformas de principio a fin: backend, frontend y DevOps.
+
+Cristian es un desarrollador fullstack especializado en Vue.js, Node.js, PHP/Laravel y TypeScript, con experiencia también en apps móviles (React Native/Expo) y de escritorio (Electron, PySide6).
+
+## Servicios
+
+- Desarrollo Web: SPAs, SSR, APIs REST, paneles administrativos, SEO técnico. Stack: Vue.js, Laravel, Node.js, TypeScript.
+- Apps Mobile: iOS y Android, nativo y multiplataforma. Stack: React Native, TypeScript, Node.js.
+- Apps Desktop: software para Windows y Linux. Stack: Electron, Vue.js, Node.js.
+
+## Proyectos
+
+- MintMe.com (2022) — Plataforma de tokenización para creadores de contenido. Vue.js, PHP, Docker, Sass, Node.js.
+- Nexlo (2025) — Marketplace local de tiendas cercanas. Vue.js, Laravel, MySQL.
+- API REST · Vilo Technologies (2023) — Backend con Ts.ED. TypeScript, Node.js.
+- Hispana de Seguros (2022) — Animación de vectores para web. JavaScript, SVG.
+- SecureEntrance (2024) — Sistema de control de acceso con app de escritorio y backend propio. Python, PySide6, Flask, JWT, SQLite.
+- B-Aegis (2026, en curso) — App móvil de gestión integral de bicicletas. React Native, Expo, TypeScript, NativeWind, Zustand.
+
+## Skills
+
+- Backend: Node.js, PHP, Laravel, REST APIs
+- Frontend: JavaScript, TypeScript, Vue.js, HTML/CSS, React Native
+- DevOps & Tools: Docker, Git, CI/CD, Linux, Expo Go
+
+## Contacto
+
+- Email: cristiancala@protonmail.com
+- GitHub: https://github.com/CristianCala
+- LinkedIn: https://www.linkedin.com/in/cristian-rafael-6092a2193/
+- Sitio: https://cristianabsoluto.com/

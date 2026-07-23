@@ -1,854 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Hola soy Cristian Cala! Diseñador y Desarrollador web amante de las ciencias y la tecnología, apasionado por el color, la naturaleza y la forma en la que tanto artes como las ciencias, pueden unirse para formar bellas composiciones artísticas en este mundo."
-		/>
-		<!-- Open Graph data -->
-		<meta property="og:title" content="Cristian Cala" />
-		<meta property="og:type" content="Tecnología" />
-		<meta property="og:url" content=" https://cristiancala.netlify.app/" />
-		<meta property="og:image" content="https://cristiancala.netlify.app/img/web.png" />
-		<meta property="og:site_name" content="cristiancala.netlify.app" />
-		<meta property="article:published_time" content="2021-1-17T05:59:00+01:00" />
-		<meta property="article:section" content="Tecnología" />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/bike.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#211915" />
+    <meta name="robots" content="index, follow" />
+    <title>Cristian Cala · Fullstack Developer</title>
+    <meta
+      name="description"
+      content="Cristian Cala — Desarrollador Fullstack. Construyo plataformas de principio a fin: backend, frontend y DevOps."
+    />
+    <link rel="canonical" href="https://cristianabsoluto.com/" />
 
-		<meta name="facebook:title" content="Cristian Cala">
-		<meta name="facebook:description" content="Hola soy Cristian Cala! Diseñador y Desarrollador web amante de las ciencias y la tecnología, apasionado por el color, la naturaleza y la forma en la que tanto artes como las ciencias, pueden unirse para formar bellas composiciones artísticas en este mundo.">
-		<meta name="facebook:image" content="https://cristiancala.netlify.app/img/web.png">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-46F43ZSX0P"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cristian Cala" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content="https://cristianabsoluto.com/" />
+    <meta property="og:title" content="Cristian Cala · Fullstack Developer" />
+    <meta property="og:description" content="Desarrollador Fullstack — backend, frontend y DevOps." />
+    <meta property="og:image" content="https://cristianabsoluto.com/img/cristian-profile.jpg" />
 
-		  gtag('config', 'G-46F43ZSX0P');
-		</script>
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
-		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<!-- Fontawesome -->
-		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-		<!-- MDB -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"/>
-		<!-- SweetAlertjs -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
-		<link rel="stylesheet" href="css/styles.css">
-		<title>Cristian Cala</title>
-	</head>
-	<body>
-		<svg style="display:none;">
-			<symbol id="one" viewBox="0 0 1440 320" preserveAspectRatio="none">
-				<path id="Head_2_" fill="#5A6AC1" d="M1502.19,764.999c0,0-48.253-23.874-130.739-53.717
-				c-82.485-29.843-184.061-54.809-431.991-65.756c-247.933-10.948-909.245,40.701-937.303-3.239C-2.836,617.018,0,215.431,0,215.431
-				s253.015-135.461,740.846,0s759.509,0,759.509,0L1502.19,764.999z"/>
-			</symbol>
-			<symbol id="two" viewBox="0 0 1440 320" preserveAspectRatio="none">
-				<path id="abajo" fill="#5A6AC1" d="M1550.304-350.908c0,0-49.692,24.06-134.687,54.219s-189.713,55.517-445.547,67.415
-					c-255.838,11.901-938.603-37.207-967.36,6.84c-5.037,25.289-0.257,426.861-0.257,426.861s229,123.842,764.613-2.847
-					s783.95,221.633,783.95,221.633L1550.304-350.908z"/>
-			</symbol>
-			<symbol id="tree" viewBox="0 0 1440 320" preserveAspectRatio="none">
-				<path id="abajoSection" fill="#5A6AC1" d="M1468.43,782.878c0,0-47.113-24.07-127.696-54.248
-						c-80.581-30.178-179.86-55.558-422.396-67.512C675.799,649.163,28.543,698.123,1.272,654.07
-						c-4.781-25.29-0.336-426.861-0.336-426.861s250.443-125.55,724.859,3.012C1200.211,358.782,1468.938,8.757,1468.938,8.757
-						L1468.43,782.878z"/>
-			</symbol>
-			<symbol id="fourt" viewBox="0 0 1440 320" preserveAspectRatio="none">
-				<path id="Nav_1_" fill="#262626" d="M0.002,358.838c0,0,318.191,249.561,775.087,250.907
-							c456.895,1.347,775.589-250.907,775.589-250.907v571.893H0L0.002,358.838z"/>
-			</symbol>
-			<symbol id="five" viewBox="0 0 1440 320" preserveAspectRatio="none">
-				<path id="sectionContact" fill="#5A6AC1" d="M1499.839,170.739c0,0-271.679-135.461-759.51,0s-740.846,0-740.846,0
-								s-2.836-401.587,2.157-426.856c28.058-43.939,689.37,7.709,937.303-3.239c247.93-10.946,349.506-35.913,431.991-65.756
-								s130.738-53.717,130.738-53.717L1499.839,170.739z"/>
-			</symbol>
-		</svg>
-		<nav class="navbar navbar-expand-lg bg-dark sticky-top">
-			<div class="container">
-				<a class="navbar-brand d-block d-lg-none fs-3 fw-bolder m-text-secondary brand-decorate" href="#">
-					Cristian<strong class="fw-normal">Absoluto</strong> 
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toogleButton" aria-controls="toogleButton" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="fas fa-bars fa-2x text-white"></span>
-				</button>
-				<a class="navbar-brand d-none d-lg-block fs-3 fw-bold m-text-secondary brand-decorate" href="#">
-					Cristian<strong class="fw-normal">Absoluto</strong>
-				</a>
-				<div class="collapse navbar-collapse" id="toogleButton">
-					<ul class="navbar-nav mx-auto text-center">
-						<li class="nav-item ms-3">
-							<a href="#sobreMi" class="nav-link text-white fs-5">Sobre mi
-							</a>
-						</li>
-						<li class="nav-item ms-3">
-							<a href="#proyectos" class="nav-link text-white fs-5">Portafolio</a>
-						</li>
-						<li class="nav-item ms-3">
-							<a href="#servicios" class="nav-link text-white fs-5">Servicios</a>
-						</li>
-						<li class="nav-item ms-3">
-							<a href="#contacto" class="nav-link text-white fs-5">Contacto</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<header class="bg-dark" id="head">
-			<div id="particles-js" style="height: 100vh;"></div>
-			<div class="particles-box container p-5">
-				<hgroup class="text-start text-white ms-4">
-					<h2 class="font-small fw-light interlineado">!HOLA! YO SOY</h2>
-					<h1 class="m-text-secondary fw-bold font-large interlineado">CRISTIAN CALA</h1>
-					<h2 class="font-small interlineado fw-bold">DESARROLLADOR Y DISEÑADOR WEB</h2>
-				</hgroup>
-				<div class="container ms-3">
-					<a href="#sobreMi" class="btn m-btn-primary mt-3 p-2 px-4">Ver Portafolio <i class="fas fa-arrow-down"></i></a>
-				</div>
-			</div>
-			<svg class="position-absolute w-100 svg-header">
-				<use xlink:href="#one"></use>
-			</svg>
-		</header>
-		<main>
-			<section class="m-bg-primary section-sobre p-5" id="sobreMi">
-				<h4 class="text-white p-5 fw-bolder fs-1 opacity_down fade_up">Sobre mi</h4>
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-sm-6 opacity_down fade_right">
-							<div class="text-center">
-								<img src="img/MeCircle.png" width="300" height="300" alt="pentagono">
-								<h3 class="text-white fs-2 mt-2 fw-bolder">¿Quíen soy?</h3>
-								<p class="text-white fs-5">
-									Soy un diseñador y desarrollador web amante de las ciencias y la tecnología, apasionado por la web y el concepto artístico del minimalismo que junto al color influye sobre las personas.
-								</p>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6">
-							<div class="card p-5 fade_left opacity_down">
-								<div class="row">
-									<div class="col-xs-12 col-sm-12 col-md-6 m-text-secondary">
-										<div class="relative">HTML5
-											<span class="porcentaje">90%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative h6">CCS3
-											<span class="porcentaje">90%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">Javascript
-											<span class="porcentaje">60%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 60%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">Python
-											<span class="porcentaje">80%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 80%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">PHP
-											<span class="porcentaje">50%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 50%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">NodeJs
-											<span class="porcentaje">50%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 50%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 m-text-secondary">
-										<div class="relative">Laravel
-											<span class="porcentaje">50%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 50%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">Django
-											<span class="porcentaje">60%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 60%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">Sql
-											<span class="porcentaje">80%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 80%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">Photoshop
-											<span class="porcentaje">60%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 60%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">Ilustrator
-											<span class="porcentaje">60%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 60%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="relative">ElectronJs
-											<span class="porcentaje">60%</span>
-										</div>
-										<div class="progress mb-2">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="max-width: 60%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="mt-4 text-center">
-								<a href="src/CurriculumCristian.pdf" download class="btn m-btn-primary">Descargar CV <i class="fas fa-file-download mx-2"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="m-bg-color pt-5" id="proyectos">
-				<svg class="position-absolute w-100 svg-proyectos">
-					<use xlink:href="#two"></use>
-				</svg>
-				<h4 class="p-5 ms-5 fw-bolder mt-4 fs-1 opacity_down fade_right">Proyectos</h4>
-				<div class="container tamaño-container">
-					<div class="row">
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_right">
-							<div class="card proyectos mt-2 hover hover-3">
-								<img src="img/VillaBurger.png" alt="VillaBurger" loading="lazy">
-								<div class="hover-overlay"></div>
-								<div class="hover-contenido">
-									<div class="hover-descripcion">
-										<h5 class="text-white mt-5 fw-bold">Villaburger</h5>
-										<p class="text-white">Plantilla para bar y restaurant</p>
-										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#exampleModal">
-										Visualizar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_up">
-							<div class="card proyectos mt-2 hover hover-3">
-								<img src="img/RecoveryLoid.png" alt="RecoveryLoid" loading="lazy">
-								<div class="hover-overlay"></div>
-								<div class="hover-contenido">
-									<div class="hover-descripcion">
-										<h5 class="text-white mt-5 fw-bold">RecoveryLoid</h5>
-										<p class="text-white">Pequeña empresa RecoveryLoid</p>
-										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#modalRecovery">
-										Visualizar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_left">
-							<div class="card proyectos mt-2 hover hover-3">
-								<img src="img/ViveEvoluciona.png" alt="ViveEvoluciona" loading="lazy">
-								<div class="hover-overlay"></div>
-								<div class="hover-contenido">
-									<div class="hover-descripcion">
-										<h5 class="text-white mt-5 fw-bold">ViveTv</h5>
-										<p class="text-white">Web para administración de usuarios</p>
-										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#modalViveTv">
-										Visualizar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Segunda fila de proyectos -->
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_right">
-							<div class="card proyectos mt-2 hover hover-3">
-								<img src="img/RegisterVive.png" alt="Register Vive" loading="lazy">
-								<div class="hover-overlay"></div>
-								<div class="hover-contenido">
-									<div class="hover-descripcion">
-										<h5 class="text-white mt-5 fw-bold">ViveTv Admin</h5>
-										<p class="text-white">Pequeño gestor de equipos</p>
-										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#modalViveAdmin">
-										Visualizar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_up">
-							<div class="card proyectos mt-2 hover hover-3">
-								<img src="img/Vesor3.png" alt="Vesor" loading="lazy">
-								<div class="hover-overlay"></div>
-								<div class="hover-contenido">
-									<div class="hover-descripcion">
-										<h5 class="text-white mt-5 fw-bold">Proyecto Vesor</h5>
-										<p class="text-white">Administrador de comunidades</p>
-										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#modalVesor">
-										Visualizar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_left">
-							<div class="card proyectos mt-2 hover hover-3">
-								<img src="img/Rode1.png" alt="Rode" loading="lazy">
-								<div class="hover-overlay"></div>
-								<div class="hover-contenido">
-									<div class="hover-descripcion">
-										<h5 class="text-white mt-5 fw-bold">Rode</h5>
-										<p class="text-white">Administrador de pagos y deudas</p>
-										<button type="button" class="btn m-btn-primary-mate" data-bs-toggle="modal" data-bs-target="#modalRode">
-										Visualizar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<svg class="position-absolute w-100 svg-proyectos-abajo">
-					<use xlink:href="#tree"></use>
-				</svg>
-			</section>
-			<section class="m-bg-primary p-5" id="servicios">
-				<h4 class="p-5 fw-bolder text-white fs-1 opacity_down fade_right">Servicios</h4>
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_right">
-							<div class="card text-center p-4 mt-2">
-								<div class="container p-3 circle m-bg-color">
-									<img src="img/Diseño-web.svg" width="100" height="100" alt="Diseño web icono">
-								</div>
-								<h3 class="text-dark fw-bold">Diseño Web</h3>
-								<p class="text-muted">
-									Planificación, diseño y
-									mantenimiento de la interfaz
-									web, bajo la implementación del
-									análisis de interfaz de usuario
-									(UI) y experiencia de usuario
-									(UX).
-								</p>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_up">
-							<div class="card text-center p-4 mt-2">
-								<div class="container p-3 circle m-bg-color">
-									<img src="img/Desarrollo-web.svg" width="100" height="100" alt="Diseño web icono">
-								</div>
-								<h3 class="text-dark fw-bold">Desarrollo Web</h3>
-								<p class="text-muted">
-									Creación de sitios web según el gusto del consumidor y
-									mantenimiento de los mismos a
-									partir tecnologías del lado del
-									cliente y servidor.
-								</p>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-lg-4 opacity_down fade_left">
-							<div class="card text-center p-4 mt-2">
-								<div class="container p-3 circle m-bg-color">
-									<img src="img/AppEscritorio.svg" width="100" height="100" alt="Diseño web icono">
-								</div>
-								<h3 class="text-dark fw-bold">App Desktop</h3>
-								<p class="text-muted">
-									Diseño y desarrollo de
-									aplicaciones de escritorio a base de NodeJs y ElectronJs
-									compatibles con Windows, Linux
-									y Mac bajo tecnología web.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="m-bg-color pt-5" id="contacto">
-				<svg class="position-absolute w-100 svg-contacto">
-					<use xlink:href="#five"></use>
-				</svg>
-				<h4 class="p-5 ms-5 fw-bolder fs-1 opacity_down fade_right">Contacto</h4>
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-sm-6 opacity_down fade_right">
-							<div class="text-center">
-								<img src="img/Mensaje.svg" width="200" height="200" alt="pentagono">
-								<h3 class="fs-2 mt-2 fw-bolder">¡Hablemos de todo!</h3>
-								<p class="fs-5">
-									¿Te gusta mi trabajo? ¿te llama la atención alguno de mis servicios? ¡Enviame un mensaje!
-								</p>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 opacity_down fade_left">
-							<div class="fondo-contacto card p-4 mb-5">
-								<h3 class="ms-3 text-white mb-3">Déjame un mensaje</h3>
-								<form class="container-fluid" id="formulario">
-									<div class="row">
-										<div class="col-6 container-fluid">
-											<input class="form-control" type="text" placeholder="Tu nombre..." id="nombre" required>
-										</div>
-										<div class="col-6 container-fluid">
-											<input class="form-control" type="email" placeholder="Email..." id="email" required>
-										</div>
-										<div class="container">
-											<input class="form-control my-3" type="text" placeholder="Asunto..." id="asunto" required>
-											<textarea name="mensaje" placeholder="Mensaje..." class="form-control" id="mensaje" rows="3"></textarea>
-										</div>
-									</div>
-									<div class="text-center mt-3">
-										<input type="button" class="btn m-btn-primary px-5" value="Enviar" onClick="{sendEmail()}">
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="relative bg-dark">
-			<a href="#head" class="btn btn-up"><i class="fas fa-arrow-up"></i></a>
-			<h4 class="text-white text-center pt-5 fs-2">¡La ciencia es elegante!</h4>
-			<ul class="d-flex justify-content-center container mt-4">
-				<li>
-					<a href="http://github.com/CristianCala" class="mx-3 ">
-						<i class="fab fa-github fa-lg text-white social-btn"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/cristian-rafael-6092a2193/" class="mx-3">
-						<i class="fab fa-linkedin-in fa-lg text-white social-btn"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/cristianabsoluto/" class="mx-3">
-						<i class="fab fa-instagram fa-lg text-white social-btn "></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://t.me/cristianabsoluto" class="mx-3"><i class="fab fa-telegram-plane fa-lg text-white social-btn"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/Cristia95149808" class="mx-3"><i class="fab fa-twitter fa-lg text-white social-btn"></i>
-					</a>
-				</li>
-			</ul>
-			<div class="container-fluid text-center bg-light py-2 mt-5">
-				<p class="text-dark fs-5">Creado con <i class="fas fa-heart text-danger"></i> por <strong class="m-text-secondary	">Cristian Cala @2021</strong></p>
-			</div>
-		</footer>
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content relative">
-					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
-					<div>
-						<!-- Carousel wrapper -->
-						<div
-							id="carouselBasicExample"
-							class="carousel slide carousel-fade"
-							data-mdb-ride="carousel"
-							>
-							<!-- Inner -->
-							<div class="carousel-inner">
-								<!-- Single item -->
-								<div class="carousel-item active">
-									<img
-									src="img/VillaBurgerM.png"
-									class="d-block w-100"
-									alt="Villaburger web"
-									/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img
-									src="img/VillaBurger2.png"
-									class="d-block w-100"
-									alt="..."
-									/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img
-									src="img/VillaBurger3.png"
-									class="d-block w-100"
-									alt="..."
-									/>
-								</div>
-							</div>
-							<!-- Controles -->
-							<button
-							class="carousel-control-prev"
-							type="button"
-							data-mdb-target="#carouselBasicExample"
-							data-mdb-slide="prev"
-							>
-							<span class="fas fa-caret-left fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-							</button>
-							<button
-							class="carousel-control-next"
-							type="button"
-							data-mdb-target="#carouselBasicExample"
-							data-mdb-slide="next"
-							>
-							<span class="fas fa-caret-right fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					<div class="modal-body p-4">
-						<h5 class="fs-3 fw-bold">Villaburger</h5>
-						<h4 class="fs-4 text-muted mb-4">Plantilla</h4>
-						<p>Plantilla diseñada con HTML5, CSS3, Javascript, Ilustrator y Photoshop. Diseñada específicamente para venta de comida rápida.</p>
-					</div>
-					<div class="container pb-3 ps-4">
-						<a href="https://plantillademoburger.netlify.app/"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold">Ver Sitio</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ModalRecovery -->
-		<div class="modal fade" id="modalRecovery" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content relative">
-					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
-					<div>
-						<!-- Carousel wrapper -->
-						<div
-							id="carouselButtonViveTv"
-							class="carousel slide carousel-fade"
-							data-mdb-ride="carousel"
-							>
-							<!-- Inner -->
-							<div class="carousel-inner">
-								<!-- Single item -->
-								<div class="carousel-item active">
-									<img
-									src="img/Recovery.png"
-									class="d-block w-100"
-									alt="Villaburger web"
-									/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img
-									src="img/Recovery2.png"
-									class="d-block w-100"
-									alt="..."
-									/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img
-									src="img/Recovery3.png"
-									class="d-block w-100"
-									alt="..."
-									/>
-								</div>
-							</div>
-							<!-- Controles -->
-							<button
-							class="carousel-control-prev"
-							type="button"
-							data-mdb-target="#carouselButtonViveTv"
-							data-mdb-slide="prev"
-							>
-							<span class="fas fa-caret-left fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-							</button>
-							<button
-							class="carousel-control-next"
-							type="button"
-							data-mdb-target="#carouselButtonViveTv"
-							data-mdb-slide="next"
-							>
-							<span class="fas fa-caret-right fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					<div class="modal-body p-4">
-						<h5 class="fs-3 fw-bold">RecoveryLoid</h5>
-						<h4 class="fs-4 text-muted mb-4">Web de tecnología</h4>
-						<p>Página web de Recoveryloid, pequeña empresa encargada de reparar, mantener y realizar soporte técnico.</p>
-					</div>
-					<div class="container pb-3 ps-4">
-						<a href="https://recovery-web.netlify.app//"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold">Ver Sitio</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ModalViveTv -->
-		<div class="modal fade" id="modalViveTv" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content relative">
-					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
-					<div>
-						<!-- Carousel wrapper -->
-						<div
-							id="carouselButtonRecovery"
-							class="carousel slide carousel-fade"
-							data-mdb-ride="carousel"
-							>
-							<!-- Inner -->
-							<div class="carousel-inner">
-								<!-- Single item -->
-								<div class="carousel-item active">
-									<img
-									src="img/ViveEvoluciona.png"
-									class="d-block w-100"
-									alt="Villaburger web"
-									/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img
-									src="img/ViveEvoluciona2.png"
-									class="d-block w-100"
-									alt="..."
-									/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img
-									src="img/ViveEvoluciona3.png"
-									class="d-block w-100"
-									alt="..."
-									/>
-								</div>
-							</div>
-							<!-- Controles -->
-							<button
-							class="carousel-control-prev"
-							type="button"
-							data-mdb-target="#carouselButtonRecovery"
-							data-mdb-slide="prev"
-							>
-							<span class="fas fa-caret-left fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-							</button>
-							<button
-							class="carousel-control-next"
-							type="button"
-							data-mdb-target="#carouselButtonRecovery"
-							data-mdb-slide="next"
-							>
-							<span class="fas fa-caret-right fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					<div class="modal-body p-4">
-						<h5 class="fs-3 fw-bold">Vive Tv</h5>
-						<h4 class="fs-4 text-muted mb-4">Web para administración</h4>
-						<p>Web diseñada para administrar la entrada y salida de los usuarios del canal, creada con Laravel y montada en la intranet.</p>
-					</div>
-					<div class="container pb-3 ps-4">
-						<a href="#"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold disabled ">Ver diseño</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ModalViveAdmin -->
-		<div class="modal fade" id="modalViveAdmin" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content relative">
-					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
-					<div>
-						<!-- Carousel wrapper -->
-						<div
-							id="carouselButtonViveAdmin"
-							class="carousel slide carousel-fade"
-							data-mdb-ride="carousel"
-							>
-							<!-- Inner -->
-							<div class="carousel-inner">
-								<!-- Single item -->
-								<div class="carousel-item active">
-									<img src="img/LoginVive.png" class="d-block w-100" alt="Login viveTv" loading="lazy"/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img src="img/RegisterVive.png" class="d-block w-100" alt="Register ViveTv" loading="lazy">
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img src="img/DashboardVive.png" class="d-block w-100" alt="Dashboard Vive Tv" loading="lazy">
-								</div>
-							</div>
-							<!-- Controles -->
-							<button
-							class="carousel-control-prev"
-							type="button"
-							data-mdb-target="#carouselButtonViveAdmin"
-							data-mdb-slide="prev"
-							>
-							<span class="fas fa-caret-left fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-							</button>
-							<button
-							class="carousel-control-next"
-							type="button"
-							data-mdb-target="#carouselButtonViveAdmin"
-							data-mdb-slide="next"
-							>
-							<span class="fas fa-caret-right fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					<div class="modal-body p-4">
-						<h5 class="fs-3 fw-bold">Vive Tv Admin</h5>
-						<h4 class="fs-4 text-muted mb-4">Web para administración de equipos</h4>
-						<p>Web diseñada para administrar los equipos de computo del canal</p>
-					</div>
-					<div class="container pb-3 ps-4">
-						<a href="#"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold disabled">Ver diseño</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ModalVesor -->
-		<div class="modal fade" id="modalVesor" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content relative">
-					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
-					<div>
-						<!-- Carousel wrapper -->
-						<div
-							id="carouselButtonVesor"
-							class="carousel slide carousel-fade"
-							data-mdb-ride="carousel"
-							>
-							<!-- Inner -->
-							<div class="carousel-inner">
-								<!-- Single item -->
-								<div class="carousel-item active">
-									<img src="img/Vesor3.png" class="d-block w-100" alt="Vesor Aplicación" loading="lazy"/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img src="img/Vesor2.png" class="d-block w-100" alt="Vesor Login" loading="lazy">
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img src="img/Vesor.png" class="d-block w-100" alt="Registro Vesor" loading="lazy">
-								</div>
-							</div>
-							<!-- Controles -->
-							<button
-							class="carousel-control-prev"
-							type="button"
-							data-mdb-target="#carouselButtonVesor"
-							data-mdb-slide="prev"
-							>
-							<span class="fas fa-caret-left fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-							</button>
-							<button
-							class="carousel-control-next"
-							type="button"
-							data-mdb-target="#carouselButtonVesor"
-							data-mdb-slide="next"
-							>
-							<span class="fas fa-caret-right fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					<div class="modal-body p-4">
-						<h5 class="fs-3 fw-bold">Proyecto Vesor</h5>
-						<h4 class="fs-4 text-muted mb-4">Aplicación de escritorio</h4>
-						<p>Aplicación de escritorio para llevar la administración y estadísticas de las comunidades. Creado con Python PyQt5 y Sqlite3.</p>
-					</div>
-					<div class="container pb-3 ps-4">
-						<a href="https://github.com/JoseSierraVzl/Proyecto-VESOR"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold">Ver repositorio</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ModalRODE -->
-		<div class="modal fade" id="modalRode" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content relative">
-					<button type="button" class="btn-close cerrar-modal" data-bs-dismiss="modal" aria-label="Close"></button>
-					<div>
-						<!-- Carousel wrapper -->
-						<div
-							id="carouselButtonRode"
-							class="carousel slide carousel-fade"
-							data-mdb-ride="carousel"
-							>
-							<!-- Inner -->
-							<div class="carousel-inner">
-								<!-- Single item -->
-								<div class="carousel-item active">
-									<img src="img/Rode1.png" class="d-block w-100" alt="Rode Aplicación" loading="lazy"/>
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img src="img/Rode2.png" class="d-block w-100" alt="Rode Dashboard" loading="lazy">
-								</div>
-								<!-- Single item -->
-								<div class="carousel-item">
-									<img src="img/Rode3.png" class="d-block w-100" alt="Rode Uso" loading="lazy">
-								</div>
-							</div>
-							<!-- Controles -->
-							<button
-							class="carousel-control-prev"
-							type="button"
-							data-mdb-target="#carouselButtonRode"
-							data-mdb-slide="prev"
-							>
-							<span class="fas fa-caret-left fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-							</button>
-							<button
-							class="carousel-control-next"
-							type="button"
-							data-mdb-target="#carouselButtonRode"
-							data-mdb-slide="next"
-							>
-							<span class="fas fa-caret-right fa-3x m-text-secondary" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					<div class="modal-body p-4">
-						<h5 class="fs-3 fw-bold">RODE</h5>
-						<h4 class="fs-4 text-muted mb-4">Aplicación de escritorio</h4>
-						<p>Aplicación de escritorio para llevar la administración y estadísticas deudas y cobros por y para hacer. Creada con NodeJs y ElectronJs.</p>
-					</div>
-					<div class="container pb-3 ps-4">
-						<a href="https://github.com/JoseSierraVzl/RODE2.0"  target="_blank" class="btn m-btn-primary-mate px-5 fw-bold">Ver repositorio</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		<!-- MDB -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
-		></script>
-		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-		</script>
-		<script src="js/script.js"></script>
-		<!-- Particles Js -->
-		<script src="js/particlescdn.js"></script>
-		<script src="js/particles.js"></script>
-		<!-- SweetAlertJs -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
-        <!-- Emailjs -->
-        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-	</body>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cristian Cala · Fullstack Developer" />
+    <meta name="twitter:description" content="Desarrollador Fullstack — backend, frontend y DevOps." />
+    <meta name="twitter:image" content="https://cristianabsoluto.com/img/cristian-profile.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Cristian Cala",
+        "url": "https://cristianabsoluto.com/",
+        "image": "https://cristianabsoluto.com/img/cristian-profile.jpg",
+        "jobTitle": "Fullstack Developer",
+        "description": "Desarrollador Fullstack especializado en Vue.js, Node.js, PHP/Laravel y TypeScript, con experiencia en apps móviles (React Native/Expo) y de escritorio (Electron, PySide6).",
+        "email": "mailto:cristiancala@protonmail.com",
+        "knowsAbout": [
+          "Vue.js",
+          "Node.js",
+          "PHP",
+          "Laravel",
+          "TypeScript",
+          "JavaScript",
+          "React Native",
+          "Docker",
+          "REST APIs"
+        ],
+        "sameAs": [
+          "https://github.com/CristianCala",
+          "https://www.linkedin.com/in/cristian-rafael-6092a2193/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <noscript>
+        <main>
+          <h1>Cristian Cala — Fullstack Developer</h1>
+          <p>
+            Desarrollador Fullstack con 5+ años de experiencia construyendo plataformas de
+            principio a fin: backend, frontend y DevOps. Especializado en Vue.js, Node.js,
+            PHP/Laravel y TypeScript, con experiencia también en apps móviles (React
+            Native/Expo) y de escritorio (Electron, PySide6).
+          </p>
+
+          <h2>Servicios</h2>
+          <ul>
+            <li>Desarrollo Web (SPAs, SSR, APIs REST, paneles, SEO técnico)</li>
+            <li>Apps Mobile para iOS y Android</li>
+            <li>Apps Desktop para Windows y Linux</li>
+          </ul>
+
+          <h2>Proyectos</h2>
+          <ul>
+            <li>MintMe.com — Plataforma de tokenización para creadores de contenido</li>
+            <li>Nexlo — Marketplace local de tiendas cercanas</li>
+            <li>API REST · Vilo Technologies — Backend con Ts.ED</li>
+            <li>Hispana de Seguros — Animación de vectores para web</li>
+            <li>SecureEntrance — Sistema de control de acceso con app de escritorio</li>
+            <li>B-Aegis — App móvil de gestión integral de bicicletas (en curso)</li>
+          </ul>
+
+          <h2>Contacto</h2>
+          <p>
+            Email: <a href="mailto:cristiancala@protonmail.com">cristiancala@protonmail.com</a> ·
+            GitHub: <a href="https://github.com/CristianCala">CristianCala</a> ·
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/cristian-rafael-6092a2193/">Cristian Cala</a>
+          </p>
+        </main>
+      </noscript>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

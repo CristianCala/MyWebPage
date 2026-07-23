@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#211915" />
+            <stop offset="1" stop-color="#2a201b" />
+        </linearGradient>
+        <pattern id="lines" width="39" height="39" patternTransform="rotate(115)" patternUnits="userSpaceOnUse">
+            <rect width="39" height="39" fill="transparent" />
+            <line x1="0" y1="0" x2="0" y2="39" stroke="#F4F1EA" stroke-opacity="0.025" stroke-width="1" />
+        </pattern>
+    </defs>
+
+    <rect width="1200" height="630" fill="url(#bg)" />
+    <rect width="1200" height="630" fill="url(#lines)" />
+
+    <!-- editor window -->
+    <g transform="translate(120,95)">
+        <rect width="960" height="440" rx="14" fill="#2a201b" stroke="#F4F1EA" stroke-opacity="0.1" />
+
+        <!-- title bar -->
+        <rect width="960" height="46" rx="14" fill="#211915" />
+        <rect y="32" width="960" height="14" fill="#211915" />
+        <circle cx="26" cy="23" r="6" fill="#EF3246" />
+        <circle cx="48" cy="23" r="6" fill="#F4F1EA" fill-opacity="0.25" />
+        <circle cx="70" cy="23" r="6" fill="#F4F1EA" fill-opacity="0.25" />
+        <text x="480" y="28" text-anchor="middle" font-family="monospace" font-size="14" fill="#F4F1EA" fill-opacity="0.45">token.controller.ts</text>
+
+        <!-- code lines -->
+        <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">
+            <text x="34" y="96" fill="#F4F1EA" fill-opacity="0.35">1</text>
+            <text x="70" y="96"><tspan fill="#EF3246">@Controller</tspan><tspan fill="#F4F1EA" fill-opacity="0.55">(</tspan><tspan fill="#F4F1EA">"/tokens"</tspan><tspan fill="#F4F1EA" fill-opacity="0.55">)</tspan></text>
+
+            <text x="34" y="134" fill="#F4F1EA" fill-opacity="0.35">2</text>
+            <text x="70" y="134"><tspan fill="#F4F1EA" fill-opacity="0.75">export class</tspan><tspan fill="#F4F1EA"> TokenController </tspan><tspan fill="#F4F1EA" fill-opacity="0.55">{</tspan></text>
+
+            <text x="34" y="172" fill="#F4F1EA" fill-opacity="0.35">3</text>
+            <text x="106" y="172"><tspan fill="#EF3246">@Get</tspan><tspan fill="#F4F1EA" fill-opacity="0.55">(</tspan><tspan fill="#F4F1EA">"/:id"</tspan><tspan fill="#F4F1EA" fill-opacity="0.55">)</tspan></text>
+
+            <text x="34" y="210" fill="#F4F1EA" fill-opacity="0.35">4</text>
+            <text x="106" y="210"><tspan fill="#F4F1EA" fill-opacity="0.75">async</tspan><tspan fill="#F4F1EA"> get(</tspan><tspan fill="#F4F1EA" fill-opacity="0.65">id: string</tspan><tspan fill="#F4F1EA">) {</tspan></text>
+
+            <text x="34" y="248" fill="#F4F1EA" fill-opacity="0.35">5</text>
+            <text x="142" y="248"><tspan fill="#F4F1EA" fill-opacity="0.75">return</tspan><tspan fill="#F4F1EA"> this.service.find(id)</tspan><tspan fill="#F4F1EA" fill-opacity="0.55">;</tspan></text>
+
+            <text x="34" y="286" fill="#F4F1EA" fill-opacity="0.35">6</text>
+            <text x="106" y="286" fill="#F4F1EA" fill-opacity="0.55">}</text>
+
+            <text x="34" y="324" fill="#F4F1EA" fill-opacity="0.35">7</text>
+            <text x="70" y="324" fill="#F4F1EA" fill-opacity="0.55">}</text>
+        </g>
+
+        <!-- response chip -->
+        <g transform="translate(700,330)">
+            <rect width="220" height="76" rx="10" fill="#211915" stroke="#EF3246" stroke-opacity="0.4" />
+            <text x="18" y="30" font-family="monospace" font-size="14" fill="#F4F1EA" fill-opacity="0.4">RESPONSE</text>
+            <circle cx="18" cy="52" r="5" fill="#3FCB6E" />
+            <text x="34" y="57" font-family="monospace" font-size="16" fill="#F4F1EA">200 OK · JSON</text>
+        </g>
+    </g>
+
+    <!-- badge -->
+    <g transform="translate(120,60)">
+        <rect width="146" height="30" rx="6" fill="#EF3246" />
+        <text x="73" y="20" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" font-weight="800" letter-spacing="1.5" fill="#F4F1EA">TS.ED · REST API</text>
+    </g>
+</svg>
