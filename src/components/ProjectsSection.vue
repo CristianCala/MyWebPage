@@ -44,8 +44,8 @@
                     class="max-w-[340px] text-[15px] leading-relaxed text-cream/60"
                     style="text-wrap: pretty"
                 >
-                    Una parrilla de salida de los trabajos donde backend, frontend y DevOps cruzan
-                    la meta juntos. Haz clic en cualquiera para ver el detalle.
+                    Una parrilla de salida de trabajos backend, frontend y DevOps.
+                    Haz clic en cualquiera para ver el detalle.
                 </p>
             </div>
 

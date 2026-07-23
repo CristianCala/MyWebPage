@@ -14,7 +14,7 @@
 
 <template>
     <div
-        class="relative z-10 -mt-6 h-[130px] overflow-hidden bg-cream font-sans md:-mt-32"
+        class="relative z-10 -mt-6 h-[150px] overflow-hidden bg-cream font-sans md:-mt-32"
     >
         <div class="absolute top-0 right-0 bottom-8 w-[46%] bg-red"></div>
 
