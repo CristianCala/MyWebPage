@@ -27,6 +27,26 @@ const router = createRouter({
                 robots: 'noindex, follow',
             },
         },
+        {
+            path: '/componentes',
+            name: 'componentes',
+            component: () => import('@/views/ComponentsView.vue'),
+            meta: {
+                title: 'Componentes · Cristian Cala',
+                description: 'Librerías y componentes de código abierto construidos y mantenidos por Cristian Cala.',
+                robots: 'index, follow',
+            },
+        },
+        {
+            path: '/componentes/vue-gantt-absolute',
+            name: 'vue-gantt-absolute',
+            component: () => import('@/views/VueGanttAbsoluteView.vue'),
+            meta: {
+                title: 'Vue Gantt Absolute · Cristian Cala',
+                description: 'Librería de diagrama de Gantt libre (MIT) para Vue 3 con Composition API — documentación y playground.',
+                robots: 'index, follow',
+            },
+        },
     ],
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) return savedPosition

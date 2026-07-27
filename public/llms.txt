@@ -19,6 +19,12 @@ Cristian es un desarrollador fullstack especializado en Vue.js, Node.js, PHP/Lar
 - SecureEntrance (2024) — Sistema de control de acceso con app de escritorio y backend propio. Python, PySide6, Flask, JWT, SQLite.
 - B-Aegis (2026, en curso) — App móvil de gestión integral de bicicletas. React Native, Expo, TypeScript, NativeWind, Zustand.
 
+## Componentes / Código abierto
+
+Cristian construye y mantiene librerías de código abierto. Hub: https://cristianabsoluto.com/componentes
+
+- Vue Gantt Absolute — https://cristianabsoluto.com/componentes/vue-gantt-absolute (repo: https://github.com/CristianCala/vue-gantt-absolute, npm: vue-gantt-absolute). Librería de diagrama de Gantt libre (MIT) para Vue 3 con Composition API. Instalación: `npm install vue-gantt-absolute`. Incluye arrastre y redimensionado de barras, dependencias entre tareas, jerarquía padre/hijo colapsable, hitos (milestones), baseline (planificado vs. real), dark mode automático, panel de tareas redimensionable/colapsable y línea de "hoy". Props principales: `tasks` (GanttTask[]), `dayWidth`, `rowHeight`, `leftWidth`, `holidays`, `labels`, `showPlanned`, `theme` ('light'|'dark'|'auto'). Estado: MVP v0.2.
+
 ## Skills
 
 - Backend: Node.js, PHP, Laravel, REST APIs

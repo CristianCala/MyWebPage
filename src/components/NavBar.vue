@@ -1,8 +1,11 @@
 <script setup>
+    import { RouterLink } from 'vue-router'
+
     const links = [
         { label: 'Inicio', href: '#' },
         { label: 'Proyectos', href: '#proyectos' },
         { label: 'Sobre mí', href: '#sobre-mi' },
+        { label: 'Componentes', to: '/componentes' },
     ]
 </script>
 
@@ -17,13 +20,20 @@
             >
         </div>
         <div class="hidden items-center gap-10 md:flex">
-            <a
-                v-for="link in links"
-                :key="link.label"
-                :href="link.href"
-                class="text-[13px] font-semibold tracking-wide text-dark no-underline hover:text-cream"
-                >{{ link.label }}</a
-            >
+            <template v-for="link in links" :key="link.label">
+                <RouterLink
+                    v-if="link.to"
+                    :to="link.to"
+                    class="text-[13px] font-semibold tracking-wide text-dark no-underline hover:text-cream"
+                    >{{ link.label }}</RouterLink
+                >
+                <a
+                    v-else
+                    :href="link.href"
+                    class="text-[13px] font-semibold tracking-wide text-dark no-underline hover:text-cream"
+                    >{{ link.label }}</a
+                >
+            </template>
             <a
                 href="#contacto"
                 class="skew inline-block rounded-[7px] bg-dark px-5 py-[11px] no-underline"
